@@ -8,6 +8,9 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
+  "engines": {
+    "node": "14.16.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amoswijaya/mern-stack.git"

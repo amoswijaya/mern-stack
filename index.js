@@ -5,7 +5,7 @@ const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 require('dotenv').config();
-const URI = `mongodb+srv://amosjay:${process.env.PASSWORD}@cluster0.3thus.mongodb.net/${process.env.DATABASE}?retryWrites=true&w=majority`;
+const URI = `mongodb+srv://amosjay:20020911@cluster0.3thus.mongodb.net/MERN?retryWrites=true&w=majority`;
 const todoRoutes = require('./routes/todo');
 const userRoutes = require('./routes/user');
 // Middleware
