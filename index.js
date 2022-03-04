@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 require('dotenv').config();
 const URI = `mongodb+srv://amosjay:${process.env.PASSWORD}@cluster0.3thus.mongodb.net/${process.env.DATABASE}?retryWrites=true&w=majority`;
