@@ -6,7 +6,6 @@ const auth = require('../middlewares/auth');
 routes.use(auth);
 routes.post('/add', async (req, res) => {
   const { title } = req.body;
-  console.log(req.decode);
   const newTodo = new Todo({
     title,
     user: req.decode._id,
@@ -28,7 +27,6 @@ routes.post('/add', async (req, res) => {
 });
 
 routes.get('/list', async (req, res) => {
-  console.log(req.decode);
   const todos = await Todo.find({ user: req.decode._id });
   const user = await User.findById(req.decode._id);
   const { nickname, _id } = user;
