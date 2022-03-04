@@ -13,6 +13,7 @@ const userRoutes = require('./routes/user');
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.get('/', (req, res) => res.send('Hello World!'));
 app.use('/todo', todoRoutes);
 app.use('/user', userRoutes);
 // DB Config
